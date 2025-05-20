@@ -1,0 +1,2 @@
+celery -A app.celery_folder.celery_worker.celery_app worker --pool=solo -l info
+docker run -d --name redis -p 6379:6379 redis:7.4
